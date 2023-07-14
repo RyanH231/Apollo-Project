@@ -3,6 +3,7 @@ import {startStandaloneServer} from "@apollo/server/standalone"
 
 const typeDefs = `#graphql
         type Pokemon {
+            id: Int
             name: String
             type: String
         },
@@ -16,14 +17,17 @@ const typeDefs = `#graphql
 
 const pokemon = [
     {
+        id:1,
         name:"Charmander",
         type:"Fire"
     },
     {
+        id:2,
         name:"Squirtle",
         type:"Water"
     },
     {
+        id:3,
         name:"Bulbasaur",
         type:"Grass"
     }
